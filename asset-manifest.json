@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/OddajRzeczy/static/css/main.66b43c80.css",
+    "main.js": "/OddajRzeczy/static/js/main.d49a56fc.js",
+    "index.html": "/OddajRzeczy/index.html",
+    "main.66b43c80.css.map": "/OddajRzeczy/static/css/main.66b43c80.css.map",
+    "main.d49a56fc.js.map": "/OddajRzeczy/static/js/main.d49a56fc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.66b43c80.css",
+    "static/js/main.d49a56fc.js"
+  ]
+}
