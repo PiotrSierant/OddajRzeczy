@@ -1,0 +1,30 @@
+header {
+  max-width: 1366px;
+  width: 100%;
+}
+.hero {
+  position: absolute;
+  top: 0;
+  left: -10%;
+  background-image: url("../../assets/Home-Hero-Image.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 50%;
+  height: 100vh;
+}
+@media screen and (max-width: 830px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../../assets/Home-Hero-Image.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    opacity: 0.2;
+  }
+}
