@@ -1,0 +1,107 @@
+@import "src/scss/variables";
+nav {
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 99;
+  width: 100%;
+}
+.menu,
+.close {
+  font-size: 1.8rem;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+.menu_icon {
+  display: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+  transition: all 2s ease-in-out;
+}
+.menu a,
+.close a {
+  text-decoration: none;
+  padding: 1rem 3rem;
+}
+.menu a:hover,
+.close a:hover {
+  transition: all 0.5s ease-in-out;
+}
+.menu_list {
+  display: flex;
+  a:first-child {
+    border: 1px solid $dark-gray;
+  }
+  a:last-child {
+    padding-right: 0;
+  }
+}
+.link_Container {
+  display: flex;
+  gap: 1rem;
+  background-color: unset;
+  border: none;
+  font-size: 1.4rem;
+  padding: 0.3rem 0;
+  cursor: pointer;
+}
+.create_account {
+  border: 1px solid $yellow;
+}
+@media screen and (max-width: 830px) {
+  .menu_icon {
+    display: block;
+  }
+  .menu,
+  .close {
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 68px;
+    transition: all 1s ease-in-out;
+    font-size: 1.2rem;
+  }
+  .menu a,
+  .close a {
+    width: 100%;
+    text-align: center;
+  }
+  .menu a:hover,
+  .close a:hover {
+    border-bottom: unset;
+    transition: all 1s ease-in-out;
+  }
+  ul {
+    display: none;
+    gap: 1rem;
+    section {
+      padding: 1rem;
+    }
+  }
+  .close {
+    top: 68px;
+    left: -100%;
+    transition: all 2s ease-in-out;
+  }
+  .menu_list {
+    display: flex;
+    flex-direction: column;
+  }
+  .link_Container {
+    flex-direction: column;
+    margin-bottom: unset;
+    font-size: 1.2rem;
+  }
+  .menu_list {
+    a:last-child {
+      padding: 1rem 3rem;
+    }
+  }
+}
