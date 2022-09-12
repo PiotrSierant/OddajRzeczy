@@ -1,0 +1,24 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("../../../assets/3ColumnsBackground.png");
+}
+.statisticsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1366px;
+  width: 100%;
+  padding: 2rem 0;
+}
+@media screen and (min-width: 830px) {
+  .statisticsContainer {
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 3rem;
+  }
+}
