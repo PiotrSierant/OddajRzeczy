@@ -5,3 +5,16 @@
   font-family: $font-base;
   font-size: 10px;
 }
+
+body {
+  background-image: url("../assets/Home-Hero-Image.jpg");
+  background-repeat: no-repeat;
+  background-size: 77% 100%;
+  background-position: -100% 0;
+}
+
+@media screen and (max-width: 830px) {
+  body {
+    background-image: unset;
+  }
+}

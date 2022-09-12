@@ -67,6 +67,7 @@ nav {
     top: 68px;
     transition: all 1s ease-in-out;
     font-size: 1.2rem;
+    background-color: white;
   }
   .menu a,
   .close a {
@@ -75,8 +76,8 @@ nav {
   }
   .menu a:hover,
   .close a:hover {
-    border-bottom: unset;
-    transition: all 1s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    color: $yellow;
   }
   ul {
     display: none;

@@ -1,17 +1,24 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 header {
   max-width: 1366px;
   width: 100%;
 }
-.hero {
-  position: absolute;
-  top: 0;
-  left: -10%;
-  background-image: url("../../assets/Home-Hero-Image.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  width: 50%;
-  height: 100vh;
+.heroContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
+.hero {
+  width: 50%;
+  min-height: calc(100vh - 17vh);
+}
+
 @media screen and (max-width: 830px) {
   header {
     display: flex;
