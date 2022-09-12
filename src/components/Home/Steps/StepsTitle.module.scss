@@ -1,0 +1,18 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  h2 {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 38px;
+    font-weight: 400;
+    padding: 1rem;
+  }
+  img {
+    margin-bottom: 2rem;
+  }
+}

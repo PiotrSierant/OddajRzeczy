@@ -1,0 +1,28 @@
+@import "../../../scss/variables";
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #f0f1f1;
+  .stepsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 1366px;
+    width: 100%;
+    padding: 2rem 0;
+    gap: 2rem;
+  }
+}
+@media screen and (min-width: 830px) {
+  .container {
+    .stepsContainer {
+      flex-direction: row;
+    }
+  }
+}
