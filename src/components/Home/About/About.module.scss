@@ -1,0 +1,62 @@
+@import "../../../scss/variables";
+.container {
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f1f1;
+}
+.imgContainer {
+  width: 50%;
+  min-height: 600px;
+  background-image: url("../../../assets/People.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.AboutUs {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 6rem;
+  h3,
+  p {
+    font-weight: 400;
+    font-family: $font-alt;
+    text-align: center;
+  }
+  h3 {
+    font-size: 38px;
+    padding-top: 1rem;
+  }
+  p {
+    font-size: 16px;
+  }
+  img {
+    width: 253px;
+  }
+}
+.signature {
+  align-self: flex-end;
+  width: 209px;
+}
+@media screen and (max-width: 830px) {
+  .container {
+    flex-direction: column;
+  }
+  .imgContainer {
+    min-height: 400px;
+    width: 100%;
+    background-image: url("../../../assets/People.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .AboutUs {
+    width: 100%;
+    padding: 5rem;
+  }
+}

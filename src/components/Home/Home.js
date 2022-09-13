@@ -4,6 +4,7 @@ import { Statistics } from "./Statistics/Statistics";
 import { Steps } from "./Steps/Steps";
 import { StepsTitle } from "./Steps/StepsTitle";
 import { Button } from "./Button/Button";
+import { About } from "./About/About";
 
 export function Home() {
   return (
@@ -13,6 +14,7 @@ export function Home() {
       <StepsTitle />
       <Steps />
       <Button />
+      <About />
     </>
   );
 }
