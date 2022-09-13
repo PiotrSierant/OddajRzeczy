@@ -10,6 +10,7 @@ function App() {
       <div className={styles.container}>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/Home" element={<Home />} />
           <Route path="/OddajRzeczy" element={<Home />} />
           {/*<Route path="/logowanie" element={<Login />} />*/}
           {/*<Route path="/rejestracja" element={<Register />} />*/}
