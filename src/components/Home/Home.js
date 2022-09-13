@@ -5,6 +5,7 @@ import { Steps } from "./Steps/Steps";
 import { StepsTitle } from "./Steps/StepsTitle";
 import { Button } from "./Button/Button";
 import { About } from "./About/About";
+import { WhoHelp } from "./WhoHelp/WhoHelp";
 
 export function Home() {
   return (
@@ -15,6 +16,7 @@ export function Home() {
       <Steps />
       <Button />
       <About />
+      <WhoHelp />
     </>
   );
 }

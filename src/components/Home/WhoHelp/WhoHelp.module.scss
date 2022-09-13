@@ -1,0 +1,55 @@
+@import "../../../scss/variables";
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.whoHelpContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1366px;
+  width: 100%;
+  padding: 3rem 0;
+  gap: 2rem;
+  h3 {
+    font-size: 38px;
+    font-family: $font-alt;
+    font-weight: 400;
+    text-align: center;
+  }
+}
+.ButtonSection {
+  display: flex;
+  gap: 1rem;
+}
+.whoHelpButton {
+  width: 250px;
+  text-align: center;
+  font-size: 20px;
+  border: 1px solid $dark-gray;
+  background-color: unset;
+  cursor: pointer;
+  padding: 1rem;
+}
+.description {
+  p {
+    padding: 3rem 2rem;
+    font-family: $font-alt;
+    font-weight: 400;
+    font-size: 18px;
+    max-width: 640px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 830px) {
+  .ButtonSection {
+    flex-direction: column;
+  }
+  .whoHelpButton {
+    width: 300px;
+  }
+}
