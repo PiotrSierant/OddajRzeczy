@@ -1,0 +1,28 @@
+@import "../scss/variables";
+.notFoundContainer {
+  height: 100vh;
+  width: 100%;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  p {
+    font-size: 30px;
+    font-weight: 400;
+    font-family: $font-alt;
+  }
+  .button {
+    padding: 1rem 3rem;
+    border: 3px solid $dark-gray;
+    border-radius: 2rem;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    background-color: unset;
+    &:hover {
+      border: 3px solid $yellow;
+    }
+  }
+}

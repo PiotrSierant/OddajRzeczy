@@ -5,7 +5,9 @@
   font-family: $font-base;
   font-size: 10px;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-image: url("../assets/Home-Hero-Image.jpg");
   background-repeat: no-repeat;

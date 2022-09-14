@@ -1,16 +1,27 @@
 import React from "react";
 import styles from "./Navbar.module.scss";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
+import { useLocation } from "react-router-dom";
 import { MenuList } from "./MenuList";
 
 export function Menu({ isOpen, handleClickMenu }) {
-  const menuList = MenuList.map(({ url, title, id }) => {
+  let location = useLocation();
+  const menuList = MenuList.map(({ title, id, scroll }) => {
     return (
-      <NavLink key={id} to={url} onClick={handleClickMenu}>
+      <ScrollLink key={id} to={scroll} onClick={handleClickMenu}>
         <li>{title}</li>
-      </NavLink>
+      </ScrollLink>
     );
   });
+  const menuListLogin = MenuList.map(({ url, title, id }) => {
+    return (
+      <Link key={id} to={url} onClick={handleClickMenu}>
+        <li>{title}</li>
+      </Link>
+    );
+  });
+
   return (
     <ul className={isOpen ? `${styles.menu}` : `${styles.close}`}>
       <section className={styles.link_Container}>
@@ -19,7 +30,21 @@ export function Menu({ isOpen, handleClickMenu }) {
           Załóż konto
         </Link>
       </section>
-      <section className={styles.menu_list}>{menuList}</section>
+      {location.pathname === "/logowanie" && (
+        <section className={styles.menu_list}>{menuListLogin}</section>
+      )}
+      {location.pathname === "/rejestracja" && (
+        <section className={styles.menu_list}>{menuListLogin}</section>
+      )}
+      {location.pathname === "/" && (
+        <section className={styles.menu_list}>{menuList}</section>
+      )}
+      {location.pathname === "/Home" && (
+        <section className={styles.menu_list}>{menuList}</section>
+      )}
+      {location.pathname === "/OddajRzeczy" && (
+        <section className={styles.menu_list}>{menuList}</section>
+      )}
     </ul>
   );
 }

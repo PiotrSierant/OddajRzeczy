@@ -5,7 +5,7 @@ import styles from "./Statistics.module.scss";
 export function Statistics() {
   return (
     <div className={styles.container}>
-      <section className={styles.statisticsContainer}>
+      <section className={styles.statisticsContainer} name="ocochodzi">
         <Column
           number={10}
           title="ODDANYCH WORKÓW"
