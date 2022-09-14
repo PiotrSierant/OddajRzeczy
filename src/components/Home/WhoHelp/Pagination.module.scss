@@ -1,0 +1,54 @@
+@import "../../../scss/variables";
+.paginationContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.desc {
+  display: flex;
+  flex-direction: column;
+  h3 {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: $font-alt;
+  }
+  p {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: $font-alt;
+  }
+}
+.tags {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: $font-alt;
+  color: $light-gray;
+}
+.pageNumber {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 7rem;
+  li {
+    font-family: $font-alt;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 1rem;
+    border: 1px solid $dark-gray;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    &:hover {
+      box-shadow: 0 0 3px $dark-gray;
+    }
+  }
+  li.active {
+    background-color: $light-gray;
+  }
+}

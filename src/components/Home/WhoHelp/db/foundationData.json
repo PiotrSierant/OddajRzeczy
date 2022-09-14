@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Foundation name1",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, voluptas?",
+    "tags": ["tag1", "tag2", "tag3"]
+  },
+  {
+    "id": 2,
+    "name": "Foundation name",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, voluptas?",
+    "tags": ["tag1", "tag2", "tag3"]
+  },
+  {
+    "id": 3,
+    "name": "Foundation name",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, voluptas?",
+    "tags": ["tag1", "tag2", "tag3"]
+  },
+  {
+    "id": 4,
+    "name": "Foundation name2",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, voluptas?",
+    "tags": ["tag1", "tag2", "tag3"]
+  },
+  {
+    "id": 5,
+    "name": "Foundation name",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, voluptas?",
+    "tags": ["tag1", "tag2", "tag3"]
+  },
+  {
+    "id": 6,
+    "name": "Foundation name",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, voluptas?",
+    "tags": ["tag1", "tag2", "tag3"]
+  },
+  {
+    "id": 7,
+    "name": "Foundation name3",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, voluptas?",
+    "tags": ["tag1", "tag2", "tag3"]
+  },
+  {
+    "id": 8,
+    "name": "Foundation name",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, voluptas?",
+    "tags": ["tag1", "tag2", "tag3"]
+  },
+  {
+    "id": 9,
+    "name": "Foundation name",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, voluptas?",
+    "tags": ["tag1", "tag2", "tag3"]
+  }
+]

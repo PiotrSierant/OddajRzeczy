@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Collection name1",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, voluptas?",
+    "tags": ["tag1", "tag2", "tag3"]
+  },
+  {
+    "id": 2,
+    "name": "Collection name",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, voluptas?",
+    "tags": ["tag1", "tag2", "tag3"]
+  },
+  {
+    "id": 3,
+    "name": "Collection name",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, voluptas?",
+    "tags": ["tag1", "tag2", "tag3"]
+  },
+  {
+    "id": 4,
+    "name": "Collection name2",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, voluptas?",
+    "tags": ["tag1", "tag2", "tag3"]
+  }
+]

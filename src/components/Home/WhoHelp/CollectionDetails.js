@@ -1,11 +1,18 @@
 import React from "react";
+import { DetailsDescription } from "./DetailsDescription";
+import { Pagination } from "./Pagination";
+import data from "./db/collectionData.json";
+import styles from "./detailsContainer.module.scss";
 
 export function CollectionDetails() {
   return (
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation.
-    </p>
+    <section className={styles.detailsContainer}>
+      <DetailsDescription
+        text="W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi
+              współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego
+              potrzebują. lorem lorem"
+      />
+      <Pagination data={data} />
+    </section>
   );
 }
