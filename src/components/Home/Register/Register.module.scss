@@ -1,3 +1,4 @@
+@import "../../../scss/variables";
 .container {
   width: 100%;
   display: flex;
@@ -6,4 +7,51 @@
   flex-direction: column;
   background-color: #fff;
   height: 100vh;
+}
+.registerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  gap: 2rem;
+  h1 {
+    font-size: 40px;
+    font-family: $font-alt;
+    font-weight: 400;
+  }
+}
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f0f1f1;
+  width: 380px;
+  padding: 5rem;
+  label {
+    align-self: flex-start;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: unset;
+    border-bottom: 1px solid #3c3c3c;
+    font-size: 16px;
+    padding: 1rem;
+  }
+  :nth-child(3) {
+    margin-top: 2rem;
+  }
+  :nth-child(5) {
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 830px) {
+  .form {
+    width: 100%;
+  }
 }
