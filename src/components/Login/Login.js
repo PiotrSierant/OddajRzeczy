@@ -1,14 +1,14 @@
 import React from "react";
 import styles from "./Login.module.scss";
-import { Navbar } from "../../Navbar/Navbar";
+import { Navbar } from "../Navbar/Navbar";
 import { LoginDetails } from "./LoginDetails";
 
-export function Login() {
+export function Login({ logInLogOut }) {
   return (
     <div className={styles.container}>
       <header>
         <Navbar />
-        <LoginDetails />
+        <LoginDetails logInLogOut={logInLogOut} />
       </header>
     </div>
   );

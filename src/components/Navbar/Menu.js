@@ -5,7 +5,7 @@ import { Link as ScrollLink } from "react-scroll";
 import { useLocation } from "react-router-dom";
 import { MenuList } from "./MenuList";
 
-export function Menu({ isOpen, handleClickMenu }) {
+export function Menu({ isOpen, handleClickMenu, isLogged }) {
   let location = useLocation();
   const menuList = MenuList.map(({ title, id, scroll }) => {
     return (
@@ -25,10 +25,20 @@ export function Menu({ isOpen, handleClickMenu }) {
   return (
     <ul className={isOpen ? `${styles.menu}` : `${styles.close}`}>
       <section className={styles.link_Container}>
-        <Link to="/logowanie">Zaloguj</Link>
-        <Link to="/rejestracja" className={styles.create_account}>
-          Załóż konto
-        </Link>
+        {isLogged ? (
+          <section className={styles.isLogged}>
+            <span>{isLogged.email}</span>
+            <button>oddaj rzeczy</button>
+            <Link to="/wyloguj">Wyloguj</Link>
+          </section>
+        ) : (
+          <>
+            <Link to="/logowanie">Zaloguj</Link>
+            <Link to="/rejestracja" className={styles.create_account}>
+              Załóż konto
+            </Link>
+          </>
+        )}
       </section>
       {location.pathname === "/logowanie" && (
         <section className={styles.menu_list}>{menuListLogin}</section>
@@ -43,6 +53,9 @@ export function Menu({ isOpen, handleClickMenu }) {
         <section className={styles.menu_list}>{menuList}</section>
       )}
       {location.pathname === "/OddajRzeczy" && (
+        <section className={styles.menu_list}>{menuList}</section>
+      )}
+      {location.pathname === "/OddajRzeczy/" && (
         <section className={styles.menu_list}>{menuList}</section>
       )}
     </ul>

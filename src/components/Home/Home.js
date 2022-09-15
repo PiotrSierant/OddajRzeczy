@@ -6,10 +6,12 @@ import { StepsTitle } from "./Steps/StepsTitle";
 import { Button } from "./Button/Button";
 import { About } from "./About/About";
 import { WhoHelp } from "./WhoHelp/WhoHelp";
+import { Navbar } from "../Navbar/Navbar";
 
-export function Home() {
+export function Home({ isLogged }) {
   return (
     <>
+      <Navbar isLogged={isLogged} />
       <Header />
       <Statistics />
       <StepsTitle />

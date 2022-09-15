@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { MobileMenu } from "./MobileMenu";
 import { Menu } from "./Menu";
 
-export function Navbar() {
+export function Navbar({ isLogged }) {
   const [isOpen, setIsOpen] = useState(false);
   const handleClickMenu = () => {
     setIsOpen(!isOpen);
@@ -11,7 +11,11 @@ export function Navbar() {
   return (
     <nav>
       <MobileMenu isOpen={isOpen} handleClickMenu={handleClickMenu} />
-      <Menu isOpen={isOpen} handleClickMenu={handleClickMenu} />
+      <Menu
+        isOpen={isOpen}
+        handleClickMenu={handleClickMenu}
+        isLogged={isLogged}
+      />
     </nav>
   );
 }
