@@ -1,0 +1,26 @@
+.container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.FooterContainer {
+  max-width: 1366px;
+  width: 100%;
+  font-size: 18px;
+  color: #3c3c3c;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  p {
+    width: 100%;
+  }
+  text-align: center;
+}
+.media {
+  padding: 0 1rem;
+  gap: 1rem;
+  display: flex;
+  justify-self: flex-end;
+}
