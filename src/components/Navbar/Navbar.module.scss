@@ -59,6 +59,29 @@ nav {
 .create_account {
   border: 1px solid $yellow;
 }
+.isLogged {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  button {
+    padding: 1rem;
+    border: 1px solid #fad648;
+    background-color: unset;
+    cursor: pointer;
+  }
+  span {
+    padding: 0;
+    margin: 0;
+    cursor: default;
+  }
+  a {
+    padding: 0;
+    margin: 0;
+    color: #737373;
+  }
+}
+
 @media screen and (max-width: 830px) {
   .menu_icon {
     display: block;
@@ -74,6 +97,7 @@ nav {
     transition: all 1s ease-in-out;
     font-size: 1.2rem;
     background-color: white;
+    border-bottom: 2px solid #fad648;
   }
   .menu a,
   .close a {
@@ -111,10 +135,7 @@ nav {
       padding: 1rem 3rem;
     }
   }
-}
-.isLogged {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
+  .isLogged {
+    flex-direction: column;
+  }
 }

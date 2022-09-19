@@ -27,8 +27,8 @@ export function Menu({ isOpen, handleClickMenu, isLogged, setIsLogged }) {
       <section className={styles.link_Container}>
         {isLogged ? (
           <section className={styles.isLogged}>
-            <span>{isLogged.email}</span>
-            <button>oddaj rzeczy</button>
+            <span>Cześć {isLogged.email}</span>
+            <button>Oddaj rzeczy</button>
             <Link
               to="/wylogowano"
               onClick={() => {
