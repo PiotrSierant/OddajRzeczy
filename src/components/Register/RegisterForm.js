@@ -31,9 +31,7 @@ export function RegisterForm({ logInLogOut }) {
 
   return (
     <form className={styles.form} onSubmit={handleSubmit}>
-      {errorMessages && <span>{errorMessages?.email}</span>}
-      {errorMessages && <span>{errorMessages?.password}</span>}
-      {errorMessages && <span>{errorMessages?.repeatPassword}</span>}
+      {errorMessages && <span>{errorMessages?.error}</span>}
       <label htmlFor="email">Email </label>
       <input
         type="text"

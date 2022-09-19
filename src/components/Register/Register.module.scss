@@ -43,9 +43,15 @@
   background-color: #f0f1f1;
   width: 380px;
   padding: 5rem 5rem 0 5rem;
+  gap: 1rem;
   span {
-    color: #ff3333;
+    width: 100%;
+    background-color: #ff3333;
     font-size: 15px;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    color: whitesmoke;
+    padding: 1rem;
   }
   label {
     align-self: flex-start;
@@ -60,9 +66,6 @@
     border-bottom: 1px solid #3c3c3c;
     font-size: 16px;
     padding: 1rem;
-  }
-  :nth-child(3) {
-    margin-top: 2rem;
   }
   .submitButton {
     border-bottom: unset;
