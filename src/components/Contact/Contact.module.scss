@@ -1,0 +1,13 @@
+@import "../../scss/variables";
+.container {
+  width: 100%;
+  min-height: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("../../assets/Background-Contact-Form.jpg");
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}

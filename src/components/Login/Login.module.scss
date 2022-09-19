@@ -81,6 +81,7 @@
     width: 100%;
   }
   .buttons {
+    width: calc(100% + 10rem);
     :nth-child(1) {
       transform: translateX(0);
     }

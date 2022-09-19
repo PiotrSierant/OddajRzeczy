@@ -5,7 +5,7 @@ import { Link as ScrollLink } from "react-scroll";
 import { useLocation } from "react-router-dom";
 import { MenuList } from "./MenuList";
 
-export function Menu({ isOpen, handleClickMenu, isLogged }) {
+export function Menu({ isOpen, handleClickMenu, isLogged, setIsLogged }) {
   let location = useLocation();
   const menuList = MenuList.map(({ title, id, scroll }) => {
     return (
@@ -29,7 +29,14 @@ export function Menu({ isOpen, handleClickMenu, isLogged }) {
           <section className={styles.isLogged}>
             <span>{isLogged.email}</span>
             <button>oddaj rzeczy</button>
-            <Link to="/wyloguj">Wyloguj</Link>
+            <Link
+              to="/wylogowano"
+              onClick={() => {
+                setIsLogged(null);
+              }}
+            >
+              Wyloguj
+            </Link>
           </section>
         ) : (
           <>
@@ -57,6 +64,9 @@ export function Menu({ isOpen, handleClickMenu, isLogged }) {
       )}
       {location.pathname === "/OddajRzeczy/" && (
         <section className={styles.menu_list}>{menuList}</section>
+      )}
+      {location.pathname === "/wylogowano" && (
+        <section className={styles.menu_list}>{menuListLogin}</section>
       )}
     </ul>
   );

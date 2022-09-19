@@ -7,11 +7,12 @@ import { Button } from "./Button/Button";
 import { About } from "./About/About";
 import { WhoHelp } from "./WhoHelp/WhoHelp";
 import { Navbar } from "../Navbar/Navbar";
+import { Contact } from "../Contact/Contact";
 
-export function Home({ isLogged }) {
+export function Home({ isLogged, setIsLogged }) {
   return (
     <>
-      <Navbar isLogged={isLogged} />
+      <Navbar isLogged={isLogged} setIsLogged={setIsLogged} />
       <Header />
       <Statistics />
       <StepsTitle />
@@ -19,6 +20,7 @@ export function Home({ isLogged }) {
       <Button />
       <About />
       <WhoHelp />
+      <Contact />
     </>
   );
 }

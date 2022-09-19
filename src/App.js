@@ -4,6 +4,7 @@ import { Home } from "./components/Home/Home.js";
 import { NotFound } from "./components/NotFound";
 import { Login } from "./components/Login/Login";
 import { Register } from "./components/Register/Register";
+import { Logout } from "./components/Logout/Logout";
 import styles from "./App.module.scss";
 
 function App() {
@@ -18,14 +19,23 @@ function App() {
     if (isLogged) {
       navigate("/Home");
     }
-  }, [isLogged]);
+  }, [isLogged, navigate]);
 
   return (
     <div className={styles.container}>
       <Routes>
-        <Route path="/" element={<Home isLogged={isLogged} />} />
-        <Route path="/Home" element={<Home isLogged={isLogged} />} />
-        <Route path="/OddajRzeczy" element={<Home isLogged={isLogged} />} />
+        <Route
+          path="/"
+          element={<Home isLogged={isLogged} setIsLogged={setIsLogged} />}
+        />
+        <Route
+          path="/Home"
+          element={<Home isLogged={isLogged} setIsLogged={setIsLogged} />}
+        />
+        <Route
+          path="/OddajRzeczy"
+          element={<Home isLogged={isLogged} setIsLogged={setIsLogged} />}
+        />
         <Route
           path="/logowanie"
           element={<Login logInLogOut={logInLogOut} />}
@@ -34,7 +44,7 @@ function App() {
           path="/rejestracja"
           element={<Register logInLogOut={logInLogOut} />}
         />
-        {/*<Route path="/wylogowano" element={<Logout />} />*/}
+        <Route path="/wylogowano" element={<Logout />} />
         <Route path="/*" element={<NotFound />} />
       </Routes>
     </div>
