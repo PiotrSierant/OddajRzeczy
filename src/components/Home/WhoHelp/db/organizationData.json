@@ -1,13 +1,13 @@
 [
   {
     "id": 1,
-    "name": "Organization name1",
+    "name": "United Nations Organization",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, voluptas?",
     "tags": ["tag1", "tag2", "tag3"]
   },
   {
     "id": 2,
-    "name": "Organization name",
+    "name": "World Health Organization ",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, voluptas?",
     "tags": ["tag1", "tag2", "tag3"]
   },
@@ -19,7 +19,7 @@
   },
   {
     "id": 4,
-    "name": "Organization name2",
+    "name": "United Nations Children's Fund",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, voluptas?",
     "tags": ["tag1", "tag2", "tag3"]
   },

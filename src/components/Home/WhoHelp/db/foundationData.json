@@ -1,25 +1,25 @@
 [
   {
     "id": 1,
-    "name": "Foundation name1",
+    "name": "Executive Director",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, voluptas?",
     "tags": ["tag1", "tag2", "tag3"]
   },
   {
     "id": 2,
-    "name": "Foundation name",
+    "name": "Special Education Teacher",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, voluptas?",
     "tags": ["tag1", "tag2", "tag3"]
   },
   {
     "id": 3,
-    "name": "Foundation name",
+    "name": "Producing Director",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, voluptas?",
     "tags": ["tag1", "tag2", "tag3"]
   },
   {
     "id": 4,
-    "name": "Foundation name2",
+    "name": "Community Outreach Manage",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, voluptas?",
     "tags": ["tag1", "tag2", "tag3"]
   },
@@ -37,7 +37,7 @@
   },
   {
     "id": 7,
-    "name": "Foundation name3",
+    "name": "Director of Corporate Sponsorship & Special Events",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, voluptas?",
     "tags": ["tag1", "tag2", "tag3"]
   },
