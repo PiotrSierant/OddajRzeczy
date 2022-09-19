@@ -1,22 +1,14 @@
-.container {
+.HeaderContainer {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-}
-header {
-  max-width: 1366px;
-  width: 100%;
 }
 .heroContainer {
+  max-width: 1366px;
   display: flex;
-  justify-content: center;
+  align-items: flex-end;
   width: 100%;
-}
-.hero {
-  width: 50%;
-  min-height: calc(100vh - 17vh);
 }
 
 @media screen and (max-width: 830px) {

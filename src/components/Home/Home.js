@@ -8,6 +8,7 @@ import { About } from "./About/About";
 import { WhoHelp } from "./WhoHelp/WhoHelp";
 import { Navbar } from "../Navbar/Navbar";
 import { Contact } from "../Contact/Contact";
+import { Footer } from "../Footer/Footer";
 
 export function Home({ isLogged, setIsLogged }) {
   return (
@@ -21,6 +22,7 @@ export function Home({ isLogged, setIsLogged }) {
       <About />
       <WhoHelp />
       <Contact />
+      <Footer />
     </>
   );
 }

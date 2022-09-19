@@ -4,12 +4,9 @@ import { RightSection } from "./RightSection/RightSection";
 
 export function Header() {
   return (
-    <div className={styles.container}>
-      <header name="start">
-        <section className={styles.heroContainer}>
-          <div className={styles.hero} />
-          <RightSection />
-        </section>
+    <div className={styles.HeaderContainer}>
+      <header name="start" className={styles.heroContainer}>
+        <RightSection />
       </header>
     </div>
   );

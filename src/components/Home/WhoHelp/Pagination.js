@@ -29,7 +29,7 @@ export function Pagination({ data }) {
   const elements = currentData.map((element) => {
     const tag = element.tags.join(", ");
     return (
-      <section key={element.id} className={styles.paginationContainer}>
+      <section key={element.id} className={styles.paginationElementContainer}>
         <section className={styles.desc}>
           <h3>{element.name}</h3>
           <p>{element.description}</p>
@@ -40,7 +40,7 @@ export function Pagination({ data }) {
   });
 
   return (
-    <section>
+    <section className={styles.paginationContainer}>
       {elements}
       <ul className={styles.pageNumber}>{pageNumber}</ul>
     </section>

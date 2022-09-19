@@ -36,6 +36,8 @@
   padding: 1rem;
 }
 .description {
+  width: 100%;
+  max-width: 1366px;
   p {
     padding: 3rem 2rem;
     font-family: $font-alt;
