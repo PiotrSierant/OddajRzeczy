@@ -1,16 +1,15 @@
 export function validate(values) {
+  const { email, password } = values;
   const errorMessages = {};
 
-  if (values.email.length <= 2) {
-    errorMessages.email = "musi byc dłuższy niż 2 znaki";
-  }
+  const validateEmail = (email) => {
+    const regex =
+      /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    return regex.test(email);
+  };
 
-  if (!values.email.includes("@")) {
-    errorMessages.email = "email musi zawierać znak @";
-  }
-
-  if (values.password.length <= 4) {
-    errorMessages.password = "musi być dłuższy niż 4 znaki";
+  if (!validateEmail(email) || password.length <= 4) {
+    errorMessages.error = "Wprowadź poprawne dane";
   }
 
   return Object.keys(errorMessages).length > 0 ? errorMessages : null;
