@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/OddajRzeczy/static/css/main.3c858a84.css",
-    "main.js": "/OddajRzeczy/static/js/main.29cddc0b.js",
+    "main.css": "/OddajRzeczy/static/css/main.4dec9392.css",
+    "main.js": "/OddajRzeczy/static/js/main.772e70b9.js",
     "static/media/3ColumnsBackground.png": "/OddajRzeczy/static/media/3ColumnsBackground.8ac466740bf11daa893f.png",
+    "static/media/Background-Contact-Form.jpg": "/OddajRzeczy/static/media/Background-Contact-Form.655c54427d3b66427460.jpg",
     "static/media/People.jpg": "/OddajRzeczy/static/media/People.2fa041c6275e64cce5d4.jpg",
     "static/media/Home-Hero-Image.jpg": "/OddajRzeczy/static/media/Home-Hero-Image.0c4f237f9a7b8fab82f4.jpg",
     "static/media/Signature.svg": "/OddajRzeczy/static/media/Signature.c7873dd2a55add33efdd94397866aeff.svg",
     "static/media/Decoration.svg": "/OddajRzeczy/static/media/Decoration.9aa6390f036fc6bdd1d42aeea823d556.svg",
     "index.html": "/OddajRzeczy/index.html",
-    "main.3c858a84.css.map": "/OddajRzeczy/static/css/main.3c858a84.css.map",
-    "main.29cddc0b.js.map": "/OddajRzeczy/static/js/main.29cddc0b.js.map"
+    "main.4dec9392.css.map": "/OddajRzeczy/static/css/main.4dec9392.css.map",
+    "main.772e70b9.js.map": "/OddajRzeczy/static/js/main.772e70b9.js.map"
   },
   "entrypoints": [
-    "static/css/main.3c858a84.css",
-    "static/js/main.29cddc0b.js"
+    "static/css/main.4dec9392.css",
+    "static/js/main.772e70b9.js"
   ]
 }
