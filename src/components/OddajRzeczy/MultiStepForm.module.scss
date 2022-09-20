@@ -1,0 +1,28 @@
+.headContainer {
+  margin-top: 6rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  flex-direction: column;
+}
+.importantContainer {
+  width: 100%;
+  background-color: #fad648;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.important {
+  max-width: 1366px;
+  width: 100%;
+  padding: 7rem 0;
+  h2 {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  p {
+    font-size: 22px;
+  }
+}
