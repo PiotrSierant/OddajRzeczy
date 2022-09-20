@@ -1,0 +1,45 @@
+@import "../../scss/variables";
+.radioSection {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin: 2rem 0;
+  label {
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size: 24px;
+    font-weight: 300;
+  }
+}
+.formStep {
+  font-size: 24px;
+  font-weight: 300;
+  color: #3c3c3c;
+}
+.formTitle {
+  font-weight: 700;
+  font-size: 36px;
+}
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkbox {
+  cursor: pointer;
+  display: flex;
+}
+.checkbox span {
+  border: 1px solid #3c3c3c;
+  height: 20px;
+  width: 20px;
+  flex-shrink: 0;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.checkbox input:checked + span {
+  background-color: $yellow;
+}

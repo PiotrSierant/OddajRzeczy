@@ -1,7 +1,9 @@
 import React from "react";
 import styles from "./MultiStepForm.module.scss";
 
-export function Important({ step }) {
+export function Important({ formInformation }) {
+  const { step } = formInformation;
+
   return (
     <div className={styles.importantContainer}>
       {step === 1 && (

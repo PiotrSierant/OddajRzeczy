@@ -54,6 +54,7 @@ export function HomeOddajRzeczy({ isLogged }) {
         formInformation={formInformation}
         nextStep={nextStep}
         prevStep={prevStep}
+        handleChange={handleChange}
       />
       <Contact />
     </div>

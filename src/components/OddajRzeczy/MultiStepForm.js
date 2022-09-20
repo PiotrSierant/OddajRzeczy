@@ -3,27 +3,21 @@ import styles from "./MultiStepForm.module.scss";
 import { Important } from "./Important";
 import { Form } from "./Form";
 
-export function MultiStepForm({ formInformation, nextStep, prevStep }) {
-  const {
-    step,
-    type,
-    bags,
-    localization,
-    whoWeHelp,
-    nameOrganization,
-    street,
-    city,
-    postCode,
-    phone,
-    date,
-    hours,
-    message,
-  } = formInformation;
-
+export function MultiStepForm({
+  formInformation,
+  nextStep,
+  prevStep,
+  handleChange,
+}) {
   return (
     <div className={styles.headContainer}>
-      <Important step={step} />
-      <Form step={step} nextStep={nextStep} prevStep={prevStep} />
+      <Important formInformation={formInformation} />
+      <Form
+        formInformation={formInformation}
+        nextStep={nextStep}
+        prevStep={prevStep}
+        handleChange={handleChange}
+      />
     </div>
   );
 }
