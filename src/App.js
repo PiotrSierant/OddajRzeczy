@@ -5,6 +5,7 @@ import { NotFound } from "./components/NotFound";
 import { Login } from "./components/Login/Login";
 import { Register } from "./components/Register/Register";
 import { Logout } from "./components/Logout/Logout";
+import { HomeOddajRzeczy } from "./components/OddajRzeczy/HomeOddajRzeczy";
 import styles from "./App.module.scss";
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
     if (isLogged) {
       navigate("/Home");
     }
-  }, [isLogged, navigate]);
+  }, [isLogged]);
 
   return (
     <div className={styles.container}>
@@ -45,6 +46,10 @@ function App() {
           element={<Register logInLogOut={logInLogOut} />}
         />
         <Route path="/wylogowano" element={<Logout />} />
+        <Route
+          path="/oddaj-rzeczy"
+          element={<HomeOddajRzeczy isLogged={isLogged} />}
+        />
         <Route path="/*" element={<NotFound />} />
       </Routes>
     </div>

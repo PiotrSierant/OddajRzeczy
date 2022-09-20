@@ -19,7 +19,6 @@ nav {
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: flex-end;
   position: relative;
 }
@@ -64,11 +63,12 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  button {
-    padding: 1rem;
+  .oddajRzeczyButton {
+    padding: 1.2rem;
     border: 1px solid #fad648;
     background-color: unset;
     cursor: pointer;
+    color: black;
   }
   span {
     padding: 0;

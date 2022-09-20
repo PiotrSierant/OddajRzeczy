@@ -28,7 +28,9 @@ export function Menu({ isOpen, handleClickMenu, isLogged, setIsLogged }) {
         {isLogged ? (
           <section className={styles.isLogged}>
             <span>Cześć {isLogged.email}</span>
-            <button>Oddaj rzeczy</button>
+            <Link to="/oddaj-rzeczy" className={styles.oddajRzeczyButton}>
+              Oddaj rzeczy
+            </Link>
             <Link
               to="/wylogowano"
               onClick={() => {
@@ -53,6 +55,9 @@ export function Menu({ isOpen, handleClickMenu, isLogged, setIsLogged }) {
       {location.pathname === "/rejestracja" && (
         <section className={styles.menu_list}>{menuListLogin}</section>
       )}
+      {location.pathname === "/wylogowano" && (
+        <section className={styles.menu_list}>{menuListLogin}</section>
+      )}
       {location.pathname === "/" && (
         <section className={styles.menu_list}>{menuList}</section>
       )}
@@ -65,7 +70,10 @@ export function Menu({ isOpen, handleClickMenu, isLogged, setIsLogged }) {
       {location.pathname === "/OddajRzeczy/" && (
         <section className={styles.menu_list}>{menuList}</section>
       )}
-      {location.pathname === "/wylogowano" && (
+      {location.pathname === "/oddaj-rzeczy" && (
+        <section className={styles.menu_list}>{menuListLogin}</section>
+      )}
+      {location.pathname === "/oddaj-rzeczy/" && (
         <section className={styles.menu_list}>{menuListLogin}</section>
       )}
     </ul>
