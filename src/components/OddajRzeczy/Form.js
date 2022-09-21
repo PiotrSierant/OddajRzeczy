@@ -1,24 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FirstStep } from "./FirstStep";
 import { SecondStep } from "./SecondStep";
+import { ThirdStep } from "./ThirdStep";
+import { FourthStep } from "./FourthStep";
+import { validate } from "./validate";
 import styles from "./Form.module.scss";
 
 export function Form({ nextStep, prevStep, formInformation, handleChange }) {
-  const {
-    step,
-    type,
-    bags,
-    localization,
-    whoWeHelp,
-    nameOrganization,
-    street,
-    city,
-    postCode,
-    phone,
-    date,
-    hours,
-    message,
-  } = formInformation;
+  const [errorDataMessages, setErrorDataMessages] = useState(null);
+  const [dataDisabled, setDataDisabled] = useState(true);
+  const { step, type, bags, localization, whoWeHelp, nameOrganization } =
+    formInformation;
+
+  useEffect(() => {
+    setDataDisabled(true);
+  }, [formInformation]);
 
   const Previous = (e) => {
     e.preventDefault();
@@ -29,6 +25,17 @@ export function Form({ nextStep, prevStep, formInformation, handleChange }) {
     e.preventDefault();
     nextStep();
   };
+
+  function handleCheckData(event) {
+    event.preventDefault();
+    const errorDataMessages = validate(formInformation);
+    setErrorDataMessages(errorDataMessages);
+    if (!errorDataMessages) {
+      setDataDisabled(false);
+    }
+    return !errorDataMessages;
+  }
+
   return (
     <div className={styles.formContainer}>
       <section className={styles.formSection}>
@@ -38,6 +45,25 @@ export function Form({ nextStep, prevStep, formInformation, handleChange }) {
         {step === 2 && (
           <SecondStep step={step} handleChange={handleChange} bags={bags} />
         )}
+        {step === 3 && (
+          <ThirdStep
+            step={step}
+            handleChange={handleChange}
+            localization={localization}
+            whoWeHelp={whoWeHelp}
+            nameOrganization={nameOrganization}
+          />
+        )}
+        {step === 4 && (
+          <FourthStep
+            handleChange={handleChange}
+            formInformation={formInformation}
+            handleCheckData={handleCheckData}
+            errorDataMessages={errorDataMessages}
+            dataDisabled={dataDisabled}
+          />
+        )}
+        {step === 5 && <FifthStep />}
       </section>
       <section className={styles.buttonNextAndPrev}>
         {step !== 1 && <button onClick={Previous}>Wstecz</button>}
@@ -52,7 +78,15 @@ export function Form({ nextStep, prevStep, formInformation, handleChange }) {
           </button>
         )}
         {step === 3 && (
-          <button onClick={Continue} disabled={bags === null}>
+          <button
+            onClick={Continue}
+            disabled={localization === null || whoWeHelp === null}
+          >
+            Dalej
+          </button>
+        )}
+        {step === 4 && (
+          <button onClick={Continue} disabled={dataDisabled}>
             Dalej
           </button>
         )}

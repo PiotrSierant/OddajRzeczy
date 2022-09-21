@@ -1,0 +1,108 @@
+@import "../../scss/variables";
+.formStep {
+  font-size: 24px;
+  font-weight: 300;
+  color: #3c3c3c;
+  margin-bottom: 2rem;
+}
+.formTitle {
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 2rem;
+}
+.dataDesc {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.dataContainer {
+  display: flex;
+  gap: 10rem;
+  margin-bottom: 10rem;
+}
+.dataAddress {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  label {
+    font-size: 24px;
+    font-weight: 300;
+    display: flex;
+    align-items: flex-start;
+    gap: 5rem;
+    justify-content: space-between;
+    input {
+      padding: 0.3rem;
+      font-size: 24px;
+      font-weight: 300;
+      justify-self: flex-end;
+    }
+  }
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  label {
+    font-size: 24px;
+    font-weight: 300;
+    display: flex;
+    align-items: flex-start;
+    gap: 5rem;
+    justify-content: space-between;
+    input {
+      padding: 0.3rem;
+      font-size: 24px;
+      font-weight: 300;
+      justify-self: flex-end;
+    }
+  }
+}
+.textareaOddajRzeczy {
+  border: 1px solid $dark-gray;
+}
+.checkSection {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 2rem;
+  .error {
+    background-color: #ff3333;
+    padding: 0.8rem 1.8rem;
+    color: whitesmoke;
+    border-radius: 0.2rem;
+    font-size: 24px;
+  }
+  .correct {
+    background-color: #2e8b57;
+    padding: 0.8rem 1.8rem;
+    color: whitesmoke;
+    border-radius: 0.2rem;
+    font-size: 24px;
+    font-weight: 300;
+  }
+}
+.checkInput {
+  font-size: 24px;
+  font-weight: 300;
+  padding: 1rem 2rem;
+  border: 1px solid black;
+}
+@media screen and (max-width: 950px) {
+  .dataContainer {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 580px) {
+  .dataAddress,
+  .date {
+    label {
+      flex-direction: column;
+      gap: 2rem;
+      input {
+        width: 100%;
+      }
+    }
+  }
+}
