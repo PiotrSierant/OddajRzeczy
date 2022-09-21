@@ -1,0 +1,79 @@
+@import "../../scss/variables";
+.formStep {
+  font-size: 24px;
+  font-weight: 300;
+  color: #3c3c3c;
+  margin-bottom: 2rem;
+}
+.formTitle {
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 2rem;
+}
+.localizationSelect {
+  font-size: 24px;
+  padding: 1rem 5rem 1rem 2rem;
+  option {
+    font-size: 24px;
+  }
+}
+.checkboxSection {
+  margin-top: 5rem;
+  h3 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+}
+.checkboxes {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  max-width: 70%;
+}
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkbox {
+  cursor: pointer;
+  display: flex;
+}
+.checkbox span {
+  border: 1px solid #3c3c3c;
+  height: 50px;
+  flex-shrink: 0;
+  cursor: pointer;
+  text-align: center;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3rem;
+}
+.checkbox input:checked + span {
+  background-color: $yellow;
+}
+.nameOrganizationTitle {
+  font-size: 24px;
+  font-weight: 700;
+}
+.nameOrganization {
+  margin: 2rem 0;
+  padding: 1rem;
+  width: 100%;
+}
+@media screen and (min-width: 830px) {
+  .nameOrganization {
+    width: 700px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .checkboxes {
+    max-width: 100%;
+  }
+}
