@@ -1,0 +1,56 @@
+.summaryTitle {
+  font-size: 36px;
+  font-weight: 700;
+}
+.summarySubTitle {
+  font-size: 24px;
+  font-weight: 700;
+}
+.summaryTypeAndLocalizationSection {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  p {
+    font-size: 24px;
+  }
+  .icon {
+    width: 50px;
+    margin-right: 0.5rem;
+    font-size: 3rem;
+  }
+}
+.dataSummary {
+  margin: 3rem 0;
+  display: flex;
+  gap: 10rem;
+}
+.dataAddress,
+.dateInformation {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  h3 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+}
+.dataAddressInfo {
+  display: flex;
+  p {
+    width: 104px;
+    margin-right: 1rem;
+  }
+  p,
+  span {
+    font-size: 24px;
+    font-weight: 300;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .dataSummary {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}

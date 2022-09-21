@@ -3,6 +3,7 @@ import { FirstStep } from "./FirstStep";
 import { SecondStep } from "./SecondStep";
 import { ThirdStep } from "./ThirdStep";
 import { FourthStep } from "./FourthStep";
+import { FifthStep } from "./FifthStep";
 import { validate } from "./validate";
 import styles from "./Form.module.scss";
 
@@ -63,7 +64,7 @@ export function Form({ nextStep, prevStep, formInformation, handleChange }) {
             dataDisabled={dataDisabled}
           />
         )}
-        {step === 5 && <FifthStep />}
+        {step === 5 && <FifthStep formInformation={formInformation} />}
       </section>
       <section className={styles.buttonNextAndPrev}>
         {step !== 1 && <button onClick={Previous}>Wstecz</button>}
@@ -90,6 +91,7 @@ export function Form({ nextStep, prevStep, formInformation, handleChange }) {
             Dalej
           </button>
         )}
+        {step === 5 && <button onClick={Continue}>Potwierdzam</button>}
       </section>
     </div>
   );
