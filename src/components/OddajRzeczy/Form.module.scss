@@ -1,6 +1,6 @@
 .formContainer {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
@@ -27,6 +27,8 @@
 }
 .buttonNextAndPrev {
   display: flex;
+  width: 100%;
+  max-width: 1366px;
   gap: 2rem;
   button {
     font-size: 24px;

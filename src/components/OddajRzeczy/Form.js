@@ -6,6 +6,7 @@ import { FourthStep } from "./FourthStep";
 import { FifthStep } from "./FifthStep";
 import { validate } from "./validate";
 import styles from "./Form.module.scss";
+import { SixthStep } from "./SixthStep";
 
 export function Form({ nextStep, prevStep, formInformation, handleChange }) {
   const [errorDataMessages, setErrorDataMessages] = useState(null);
@@ -65,9 +66,10 @@ export function Form({ nextStep, prevStep, formInformation, handleChange }) {
           />
         )}
         {step === 5 && <FifthStep formInformation={formInformation} />}
+        {step === 6 && <SixthStep />}
       </section>
       <section className={styles.buttonNextAndPrev}>
-        {step !== 1 && <button onClick={Previous}>Wstecz</button>}
+        {step !== 1 && step !== 6 && <button onClick={Previous}>Wstecz</button>}
         {step === 1 && (
           <button onClick={Continue} disabled={type === ""}>
             Dalej
