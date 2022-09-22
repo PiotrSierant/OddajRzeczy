@@ -10,10 +10,10 @@ import { Navbar } from "../Navbar/Navbar";
 import { Contact } from "../Contact/Contact";
 import { Footer } from "../Footer/Footer";
 
-export function Home({ isLogged, setIsLogged }) {
+export function Home({ setUser, user }) {
   return (
     <>
-      <Navbar isLogged={isLogged} setIsLogged={setIsLogged} />
+      <Navbar setUser={setUser} user={user} />
       <Header />
       <Statistics />
       <StepsTitle />

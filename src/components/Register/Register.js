@@ -3,12 +3,12 @@ import styles from "./Register.module.scss";
 import { Navbar } from "../Navbar/Navbar";
 import { RegisterDetails } from "./RegisterDetails";
 
-export function Register({ logInLogOut }) {
+export function Register() {
   return (
     <div className={styles.container}>
       <header>
         <Navbar />
-        <RegisterDetails logInLogOut={logInLogOut} />
+        <RegisterDetails />
       </header>
     </div>
   );

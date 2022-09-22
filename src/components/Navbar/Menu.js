@@ -1,12 +1,15 @@
 import React from "react";
 import styles from "./Navbar.module.scss";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 import { useLocation } from "react-router-dom";
 import { MenuList } from "./MenuList";
-
-export function Menu({ isOpen, handleClickMenu, isLogged, setIsLogged }) {
+import { auth } from "../../config/fire";
+import { signOut } from "firebase/auth";
+export function Menu({ isOpen, handleClickMenu, setUser }) {
   let location = useLocation();
+  let navigate = useNavigate();
+
   const menuList = MenuList.map(({ title, id, scroll }) => {
     return (
       <ScrollLink key={id} to={scroll} onClick={handleClickMenu}>
@@ -21,22 +24,27 @@ export function Menu({ isOpen, handleClickMenu, isLogged, setIsLogged }) {
       </Link>
     );
   });
+  const logOut = () => {
+    signOut(auth)
+      .then(() => {
+        setUser(null);
+        navigate("/wylogowano");
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
 
   return (
     <ul className={isOpen ? `${styles.menu}` : `${styles.close}`}>
       <section className={styles.link_Container}>
-        {isLogged ? (
+        {auth.currentUser ? (
           <section className={styles.isLogged}>
-            <span>Cześć {isLogged.email}</span>
+            <span>Cześć {auth.currentUser.email}</span>
             <Link to="/oddaj-rzeczy" className={styles.oddajRzeczyButton}>
               Oddaj rzeczy
             </Link>
-            <Link
-              to="/wylogowano"
-              onClick={() => {
-                setIsLogged(null);
-              }}
-            >
+            <Link to="/wylogowano" onClick={logOut}>
               Wyloguj
             </Link>
           </section>

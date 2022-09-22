@@ -3,12 +3,12 @@ import styles from "./Login.module.scss";
 import { Navbar } from "../Navbar/Navbar";
 import { LoginDetails } from "./LoginDetails";
 
-export function Login({ logInLogOut }) {
+export function Login() {
   return (
     <div className={styles.containerLogin}>
       <header>
         <Navbar />
-        <LoginDetails logInLogOut={logInLogOut} />
+        <LoginDetails />
       </header>
     </div>
   );

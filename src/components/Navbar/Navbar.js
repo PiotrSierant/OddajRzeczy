@@ -3,7 +3,7 @@ import { MobileMenu } from "./MobileMenu";
 import { Menu } from "./Menu";
 import styles from "./Navbar.module.scss";
 
-export function Navbar({ isLogged, setIsLogged }) {
+export function Navbar({ setUser, user }) {
   const [isOpen, setIsOpen] = useState(false);
   const handleClickMenu = () => {
     setIsOpen(!isOpen);
@@ -16,8 +16,8 @@ export function Navbar({ isLogged, setIsLogged }) {
         <Menu
           isOpen={isOpen}
           handleClickMenu={handleClickMenu}
-          isLogged={isLogged}
-          setIsLogged={setIsLogged}
+          setUser={setUser}
+          user={user}
         />
       </nav>
     </div>
