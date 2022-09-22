@@ -9,6 +9,7 @@ import { useNavigate } from "react-router-dom";
 export function LoginForm() {
   const [values, setValues] = useState({ email: "", password: "" });
   const [errorMessages, setErrorMessages] = useState(null);
+  const [errorLogin, setErrorLogin] = useState("");
   let navigate = useNavigate();
 
   function handleSubmit(event) {
@@ -29,6 +30,7 @@ export function LoginForm() {
       .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
+        setErrorLogin("Wprowadź poprawne dane");
         console.error(errorCode, errorMessage, "error");
       });
   };
@@ -44,6 +46,7 @@ export function LoginForm() {
   return (
     <form className={styles.form} onSubmit={handleSubmit}>
       {errorMessages && <span>{errorMessages?.error}</span>}
+      {errorLogin && <span>{errorLogin}</span>}
 
       <label htmlFor="email">Email </label>
       <input

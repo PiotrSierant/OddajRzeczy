@@ -17,6 +17,7 @@ export function RegisterForm() {
   });
   let navigate = useNavigate();
   const [errorMessages, setErrorMessages] = useState(null);
+  const [errorRegister, setErrorRegister] = useState("");
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -36,7 +37,10 @@ export function RegisterForm() {
           })
           .catch((err) => console.log(err));
       })
-      .catch((err) => console.log(err));
+      .catch((err) => {
+        console.log(err);
+        setErrorRegister("Wprowadzony email jest zajęty");
+      });
   };
 
   function handleChange(event) {
@@ -50,6 +54,7 @@ export function RegisterForm() {
   return (
     <form className={styles.form} onSubmit={handleSubmit}>
       {errorMessages && <span>{errorMessages?.error}</span>}
+      {errorRegister && <span>{errorRegister}</span>}
       <label htmlFor="email">Email </label>
       <input
         type="text"
