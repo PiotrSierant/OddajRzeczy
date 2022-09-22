@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/OddajRzeczy/static/css/main.1c2ac551.css",
+    "main.css": "/OddajRzeczy/static/css/main.eeac62e4.css",
     "main.js": "/OddajRzeczy/static/js/main.bd9faaf2.js",
     "static/media/3ColumnsBackground.png": "/OddajRzeczy/static/media/3ColumnsBackground.8ac466740bf11daa893f.png",
     "static/media/Background-Contact-Form.jpg": "/OddajRzeczy/static/media/Background-Contact-Form.655c54427d3b66427460.jpg",
@@ -13,11 +13,11 @@
     "static/media/Signature.svg": "/OddajRzeczy/static/media/Signature.c7873dd2a55add33efdd94397866aeff.svg",
     "static/media/Decoration.svg": "/OddajRzeczy/static/media/Decoration.9aa6390f036fc6bdd1d42aeea823d556.svg",
     "index.html": "/OddajRzeczy/index.html",
-    "main.1c2ac551.css.map": "/OddajRzeczy/static/css/main.1c2ac551.css.map",
+    "main.eeac62e4.css.map": "/OddajRzeczy/static/css/main.eeac62e4.css.map",
     "main.bd9faaf2.js.map": "/OddajRzeczy/static/js/main.bd9faaf2.js.map"
   },
   "entrypoints": [
-    "static/css/main.1c2ac551.css",
+    "static/css/main.eeac62e4.css",
     "static/js/main.bd9faaf2.js"
   ]
 }
