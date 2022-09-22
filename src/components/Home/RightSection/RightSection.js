@@ -2,6 +2,7 @@ import React from "react";
 import image from "../../../assets/Decoration.svg";
 import { Link } from "react-router-dom";
 import styles from "./RightSection.module.scss";
+import { auth } from "../../../config/fire";
 
 export function RightSection() {
   return (
@@ -12,8 +13,17 @@ export function RightSection() {
       </h1>
       <img src={image} alt="decoration" />
       <section className={styles.linkSection}>
-        <Link to="/logowanie">ODDAJ RZECZY</Link>
-        <Link to="/logowanie">ZORGANIZUJ ZBIÓRKĘ</Link>
+        {auth.currentUser ? (
+          <>
+            <Link to="/oddaj-rzeczy">ODDAJ RZECZY</Link>
+            <Link to="/oddaj-rzeczy">ZORGANIZUJ ZBIÓRKĘ</Link>
+          </>
+        ) : (
+          <>
+            <Link to="/logowanie">ODDAJ RZECZY</Link>
+            <Link to="/logowanie">ZORGANIZUJ ZBIÓRKĘ</Link>
+          </>
+        )}
       </section>
     </section>
   );
