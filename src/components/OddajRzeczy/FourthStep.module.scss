@@ -106,3 +106,17 @@
     }
   }
 }
+@media screen and (max-width: 500px) {
+  .checkSection {
+    flex-direction: column;
+    width: 100%;
+    .error,
+    .correct {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .checkInput {
+    width: 100%;
+  }
+}

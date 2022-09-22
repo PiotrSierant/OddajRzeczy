@@ -26,3 +26,17 @@
     }
   }
 }
+
+@media screen and (max-width: 570px) {
+  .selectSection {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 500px) {
+  .selectSection {
+    select {
+      width: 100%;
+    }
+  }
+}
