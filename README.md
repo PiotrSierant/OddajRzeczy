@@ -17,9 +17,13 @@ Użytkownik ma w domu rzeczy, których chce się pozbyć, ale nie wie jak.
 Jest wiele dostępnych rozwiązań, ale wiele z nich wymaga dodatkowego wysiłku lub nie ma do nich zaufania. W zweryfikowane miejsca trzeba pojechać, a nie ma na to czasu/ nie ma jak tam pojechać, a kontenery pod domem lub lokalne zbiórki są niezweryfikowane i nie wiadomo czy te rzeczy faktycznie trafią do potrzebujących.
 
 ➟ Widok Home - strony głównej wraz z: sekcją "Komu pomagamy" z możliwością przechodzenia pomiędzy grupami i paginacją formularzem kontaktowym z walidacją i wysyłką.
+
 ➟ Widok Logowania, Rejestracji, Wylogowania wraz z Routingiem.
+
 ➟ Logowanie i rejestracja użytkownika + wylogowanie (Firebase).
+
 ➟ Ścieżka /oddaj-rzeczy wraz z pełni działającym formularzem, podzielonym na odpowiednie kroki według projektu.
+
 ➟ Możliwość przejścia do *Formularza "Oddaj rzeczy"* tylko po zalogowaniu lub zarejestrowaniu.
 
 ## BUILT WITH
